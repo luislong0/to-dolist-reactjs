@@ -90,7 +90,7 @@ input[type="checkbox"]:checked::before {
 
   .containerName {
     margin-top: 0.1875rem;
-    width: 60%;
+    width: 100%;
   }
   
   /* Hide the browser's default checkbox */
