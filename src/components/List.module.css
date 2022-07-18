@@ -1,0 +1,136 @@
+.list {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.inputWithButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-top: -1.7rem;
+}
+
+.inputWithButton input {
+    width: 100%;
+    padding: 1rem 0.5rem;
+
+    background-color: var(--gray-500);
+    color: var(--gray-300);
+    border-radius: 5px;
+    border: 2px solid var(--gray-700);
+}
+
+.inputWithButton input:focus {
+    outline: none;
+    border: 2px solid var(--purple-dark);
+}
+
+.inputWithButton button {
+    width: 3rem;
+    padding: 0.5rem 0.5rem;
+
+    background-color: var(--blue-dark);
+    color: var(--gray-100);
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.inputWithButton button:hover {
+    background-color: var(--blue);
+    transition: all ease-in-out 0.2s;
+}
+
+.inputWithButton button[type=button]:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.inputWithButton button[type=button]:disabled:hover {
+    background-color: var(--blue-dark);
+}
+
+.inputWithButton button svg {
+    margin-top: 5px;
+}
+
+.worksCount {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    padding-bottom: 2rem;
+
+    border-bottom: 1px solid var(--gray-400);
+}
+
+.counter{
+    display: flex;
+    gap: 0.5rem;
+
+    color: var(--blue);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.progress {
+    display: flex;
+    gap: 0.5rem;
+
+    color: var(--purple);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.counter span, .progress span {
+    margin-top: -0.2rem;
+
+    padding: 0.2rem 1rem;
+    border-radius: 25px;
+
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+}
+
+.workList {
+    padding-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.nothing {
+    width: 60%;
+    margin: auto;
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-300);
+}
+
+.paragraphBold {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .worksCount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        gap: 1rem;
+    
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+}
